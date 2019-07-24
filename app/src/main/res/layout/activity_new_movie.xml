@@ -13,7 +13,7 @@
         android:id="@+id/txtVw_newMovie"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="30dp"
         android:fontFamily="cursive"
         android:gravity="center"
         android:text="@string/txtVw_newMovieTitle"
@@ -26,7 +26,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="20dp"
         android:layout_marginRight="10dp"
         android:background="@drawable/edittext_bg_color"
         android:ems="10"
@@ -87,11 +87,11 @@
             android:layout_height="30dp"
             android:layout_gravity="center"
             android:layout_marginLeft="10dp"
-            android:layout_marginTop="13dp"
+            android:layout_marginTop="20dp"
             android:layout_marginBottom="8dp"
-            android:background="#f7f5c8"
+            android:background="@drawable/edittext_bg_color"
             android:gravity="center"
-            android:popupBackground="#f7f5c8" />
+            android:popupBackground="@drawable/edittext_bg_color" />
 
     </LinearLayout>
 
@@ -101,7 +101,7 @@
         android:orientation="horizontal">
 
         <EditText
-            android:id="@+id/edtxt_comments"
+            android:id="@+id/dialog_edtxt_comments"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -113,7 +113,7 @@
             android:gravity="top|left"
             android:hint="@string/edtxt_commentsHint"
             android:inputType="textMultiLine"
-            android:lines="6"
+            android:lines="3"
             android:overScrollMode="always"
             android:paddingLeft="10dp"
             android:paddingTop="3dp"

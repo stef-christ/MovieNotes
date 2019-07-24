@@ -1,14 +1,10 @@
 package com.example.movienotes;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.DatePickerDialog;
-import android.database.Cursor;
-import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
-import android.text.Layout;
-import android.text.method.ScrollingMovementMethod;
-import android.view.MotionEvent;
 import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
@@ -18,7 +14,6 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import java.util.ArrayList;
 import java.util.Calendar;
 
 public class NewMovie extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
@@ -34,8 +29,10 @@ public class NewMovie extends AppCompatActivity implements DatePickerDialog.OnDa
         Button btn_datePicker = findViewById(R.id.btn_selectDate);
         txtVw_date = findViewById(R.id.txtVw_date);
         final Spinner spn_genre = findViewById(R.id.spn_genre);
-        final EditText edtxt_comments = findViewById(R.id.edtxt_comments);
+        final EditText edtxt_comments = findViewById(R.id.dialog_edtxt_comments);
         Button btn_save = findViewById(R.id.btn_save);
+        ActionBar bar = getSupportActionBar();
+        bar.hide();
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this, R.array.genres, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);

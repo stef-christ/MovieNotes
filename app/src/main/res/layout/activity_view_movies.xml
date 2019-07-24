@@ -8,34 +8,43 @@
     android:orientation="vertical"
     tools:context=".ViewMovies">
 
-    <LinearLayout
-        android:layout_width="match_parent"
+    <TextView
+        android:id="@+id/txtVw_choose"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/edittext_bg_color"
+        android:fontFamily="sans-serif-medium"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="@string/txtVw_choose"
+        android:textColor="@android:color/black"
+        android:textSize="18sp" />
 
-        <TextView
-            android:id="@+id/txtVw_choose"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="15dp"
-            android:layout_marginBottom="15dp"
-            android:background="@drawable/edittext_bg_color"
-            android:gravity="center"
-            android:paddingLeft="10dp"
-            android:paddingRight="10dp"
-            android:text="@string/txtVw_choose"
-            android:textColor="@android:color/black"
-            android:textSize="18sp" />
-
-    </LinearLayout>
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edittext_bg_color"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:popupBackground="@drawable/edittext_bg_color" />
 
     <TextView
         android:id="@+id/txtVw_allMovies"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="15dp"
+        android:layout_marginBottom="20dp"
         android:fontFamily="cursive"
         android:gravity="center"
         android:text="@string/txtVw_allMovies"
@@ -46,9 +55,10 @@
     <ListView
         android:id="@+id/listvw"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_marginLeft="10dp"
         android:layout_marginRight="10dp"
+        android:layout_marginBottom="20dp"
         android:background="@drawable/edittext_bg_color"
         android:divider="@android:color/black"
         android:dividerHeight="4px" />

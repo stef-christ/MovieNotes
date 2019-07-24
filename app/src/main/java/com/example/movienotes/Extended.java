@@ -1,5 +1,6 @@
 package com.example.movienotes;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -12,6 +13,8 @@ public class Extended extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_extended);
 
+        ActionBar bar = getSupportActionBar();
+        bar.hide();
         TextView txtVw_Movie = findViewById(R.id.txtVw_Movie);
         TextView txtVw_title = findViewById(R.id.txtVw_title);
         TextView txtVw_comments = findViewById(R.id.txtVw_comments);

@@ -9,21 +9,25 @@
     <string name="edtxt_commentsHint">Comments</string>
     <string name="btn_save">Save</string>
     <string name="txtVw_Movie">Movie</string>
-    <string name="txtVw_choose">Click and Hold to Select Movies by Genre</string>
+    <string name="txtVw_choose">Select Movies by Genre</string>
     <string name="txtVw_allMovies">All Available Movies</string>
-    <string name="ctxtMenuItemComedy">Comedy</string>
-    <string name="ctxtMenuItemAction">Action</string>
-    <string name="ctxtMenuItemAdventure">Adventure</string>
-    <string name="ctxtMenuItemDrama">Drama</string>
-    <string name="ctxtMenuItemFantasy">Fantasy</string>
-    <string name="ctxtMenuItemMystery">Mystery</string>
-    <string name="ctxtMenuItemRomance">Romance</string>
-    <string name="ctxtMenuItemSciFi">Sci-Fi</string>
-    <string name="ctxtMenuItemThriller">Thriller</string>
-    <string name="ctxtMenuItemAll">All Movies</string>
+    <string name="ctxtMenuItemDelete">Delete</string>
+    <string name="ctxtMenuItemEdit">Edit</string>
     <string name="btn_update">Update</string>
     <string-array name="genres">
         <item>Select Genre</item>
+        <item>Action</item>
+        <item>Adventure</item>
+        <item>Comedy</item>
+        <item>Drama</item>
+        <item>Fantasy</item>
+        <item>Mystery</item>
+        <item>Romance</item>
+        <item>Sci-Fi</item>
+        <item>Thriller</item>
+    </string-array>
+    <string-array name="selectbygenre">
+        <item>All Available Movies</item>
         <item>Action</item>
         <item>Adventure</item>
         <item>Comedy</item>
